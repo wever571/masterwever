@@ -1,0 +1,18 @@
+{
+    "name": "Your Name",
+    "title": "Web Developer",
+    "description": "I am a passionate web developer who loves creating responsive and interactive websites.",
+    "skills": [
+      { "name": "HTML", "level": 90 },
+      { "name": "CSS", "level": 85 },
+      { "name": "JavaScript", "level": 80 },
+      { "name": "Git", "level": 70 },
+      { "name": "React", "level": 60 }
+    ],
+    "hobbies": [
+      { "name": "🎵 Music" },
+      { "name": "🎮 Gaming" },
+      { "name": "📸 Photography" },
+      { "name": "🎨 Design" }
+    ]
+  }
