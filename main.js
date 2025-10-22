@@ -2,7 +2,7 @@ const githubUsername = "wever571";
 
 const repoList = document.getElementById("repo-list");
 
-fetch('https://api.github.com/users/${githubwever571}/repos')
+fetch('https://api.github.com/users/${wever571}/repos?sort=updated&per_page=10')
 .then(response => response.json())
 .then(data => {
   repoList.innerHTML = "";
@@ -22,3 +22,4 @@ fetch('https://api.github.com/users/${githubwever571}/repos')
   repoList.innerHTML = "<Li>Failed to load repositories.</li>;
   console.error("Error loading repos:", error);
 });
+
