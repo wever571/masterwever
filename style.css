@@ -8,6 +8,16 @@ body {
     min-height: 100vh;
     margin: 0;
   }
+
+  .profile-pic {
+      width: 200px;
+      height: auto;
+      border-radius: 15px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 15px auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
   
   .profile-container {
     background: white;
@@ -104,4 +114,5 @@ body {
   .projects a:hover {
       text-decoration: underline;
   }
+
 
