@@ -4,9 +4,7 @@ const data = {
   skills: [
     { name: "HTML", level: 90 },
     { name: "CSS", level: 80 },
-    { name: "JavaScript", level: 70 },
-    { name: "C++", level: 60 },
-    { name: "Python", level: 65 }
+    { name: "JavaScript", level: 70 }
   ],
   hobbies: ["Dancing", "Reading", "Watching Movies"]
 };
@@ -76,4 +74,5 @@ fetch('https://api.github.com/users/${githubwever571}/repos')
   console.error("Error fetching GitHub repos:', error);
   document.getElementById("repo-list").innerHTML = "<li>Failed to load repositories.</li>;
 });          
+
 
