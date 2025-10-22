@@ -31,7 +31,8 @@ body {
   }
   
   .skill {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    text-align: left;
   }
   
   .skill-name {
@@ -43,7 +44,8 @@ body {
     background: #e5e5e5;
     border-radius: 10px;
     overflow: hidden;
-    height: 10px;
+    height: 12px;
+    position: relative;
   }
   
   .skill-fill {
@@ -51,7 +53,15 @@ body {
     width: 0;
     background: linear-gradient(90deg, #6066ff, #89a1ff);
     border-radius: 10px;
-    transition: width 1.2s ease;
+    transition: width 1.5s ease;
+  }
+
+  .skill-percent {
+      text-align: right;
+      font-size: 14px;
+      color: #6066ff;
+      margin-top: 5px;
+      font-weight: 600;
   }
   
   ul {
@@ -94,3 +104,4 @@ body {
   .projects a:hover {
       text-decoration: underline;
   }
+
