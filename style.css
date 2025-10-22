@@ -30,7 +30,6 @@ body {
     margin-bottom: 10px;
   }
   
-  /* --- Skills Bar --- */
   .skill {
     margin-bottom: 15px;
   }
@@ -55,7 +54,6 @@ body {
     transition: width 1.2s ease;
   }
   
-  /* --- Hobbies --- */
   ul {
     list-style: none;
     padding: 0;
@@ -64,10 +62,35 @@ body {
     gap: 10px;
     justify-content: center;
   }
-  
+
   ul li {
     background: #eef2ff;
     padding: 8px 12px;
     border-radius: 8px;
     font-size: 16px;
+
+  }
+
+   .projects ul {
+       padding: 0;
+       list-style: none;
+       text-align: left;
+   }
+
+  .projects li {
+      background: #f7f8ff;
+      border-radius: 8px;
+      padding: 10px 15px;
+      margin: 10px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .projects a {
+      font-weight: 600;
+      color: #6066ff;
+      text-decoration: none;
+  }
+
+  .projects a:hover {
+      text-decoration: underline;
   }
