@@ -1,49 +1,3 @@
-const data = {
-  name: "Glory Mae Peralta",
-  description: "IT student passionate about web design and front-end development.",
-  skills: [
-    { name: "HTML", level: 90 },
-    { name: "CSS", level: 80 },
-    { name: "JavaScript", level: 70 }
-  ],
-  hobbies: ["Dancing", "Reading", "Watching Movies"]
-};
-     
-    document.getElementById('name').textContent = data.name;
-    document.getElementById('description').textContent = data.description;
-
-    const skillsContainer = document.getElementById('skills-list');
-    
-    data.skills.forEach(skill => {
-      const skillDiv = document.createElement('div');
-      skillDiv.classList.add('skill');
-
-      skillDiv.innerHTML = `
-        <div class="skill-name">${skill.name}</div>
-        <div class="skill-bar">
-          <div class="skill-fill" data-level="${skill.level}"></div>
-        </div>
-        <div class="skill-percent">$(skill.level)%</div>
-      `;
-      
-      skillsContainer.appendChild(skillDiv);
-    });
-
-    setTimeout(() => {
-      document.querySelectorAll(".skill-fill").forEach(bar => {
-        const level = bar.getAttribute("data-level");
-        bar.style.width = level + "%";
-      });
-    }, 300);
-
-    const hobbiesList = document.getElementById('hobbies-list');
-    data.hobbies.forEach(hobby => {
-      const li = document.createElement('li');
-      li.textContent = hobby;
-      hobbiesList.appendChild(li);
-    });
-
-
 const githubUsername = "wever571";
 
 fetch('https://api.github.com/users/${githubwever571}/repos')
@@ -74,5 +28,6 @@ fetch('https://api.github.com/users/${githubwever571}/repos')
   console.error("Error fetching GitHub repos:', error);
   document.getElementById("repo-list").innerHTML = "<li>Failed to load repositories.</li>;
 });          
+
 
 
